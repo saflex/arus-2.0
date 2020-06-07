@@ -1,0 +1,13 @@
+<svg width="84" height="263" viewBox="0 0 84 263" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M67 236C67 249.807 55.8071 261 42 261" stroke="#DBDBDC" stroke-width="4"/>
+<path d="M17 236C17 222.193 28.1929 211 42 211" stroke="#DBDBDC" stroke-width="4"/>
+<path d="M42 211C55.8071 211 67 222.193 67 236" stroke="#DBDBDC" stroke-width="2" stroke-dasharray="8 4"/>
+<path d="M42 261C28.1929 261 17 249.807 17 236" stroke="#DBDBDC" stroke-width="2" stroke-dasharray="8 4"/>
+<line x1="67" y1="117" x2="67" y2="236" stroke="#DBDBDC" stroke-width="4"/>
+<line x1="17" y1="117" x2="17" y2="236" stroke="#DBDBDC" stroke-width="4" stroke-dasharray="8 4"/>
+<line x1="67" y1="-5.46392e-08" x2="67" y2="55" stroke="#DBDBDC" stroke-width="4" stroke-dasharray="8 4"/>
+<line x1="17" y1="-5.46392e-08" x2="17" y2="55" stroke="#DBDBDC" stroke-width="4"/>
+<line x1="16.4273" y1="118.764" x2="67.4925" y2="53.7645" stroke="#DBDBDC" stroke-width="4" stroke-dasharray="8 4"/>
+<line x1="16.5735" y1="53.7654" x2="67.5735" y2="118.765" stroke="#DBDBDC" stroke-width="4"/>
+<circle cx="42" cy="86" r="40" transform="rotate(90 42 86)" stroke="#18181A" stroke-width="4"/>
+</svg>

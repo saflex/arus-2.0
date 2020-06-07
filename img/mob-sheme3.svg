@@ -1,0 +1,13 @@
+<svg width="84" height="263" viewBox="0 0 84 263" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 236C17 249.807 28.1929 261 42 261" stroke="#DBDBDC" stroke-width="4"/>
+<path d="M67 236C67 222.193 55.8071 211 42 211" stroke="#DBDBDC" stroke-width="4"/>
+<path d="M42 211C28.1929 211 17 222.193 17 236" stroke="#DBDBDC" stroke-width="2" stroke-dasharray="8 4"/>
+<path d="M42 261C55.8071 261 67 249.807 67 236" stroke="#DBDBDC" stroke-width="2" stroke-dasharray="8 4"/>
+<line y1="-2" x2="119" y2="-2" transform="matrix(-4.37114e-08 1 1 4.37114e-08 19 117)" stroke="#DBDBDC" stroke-width="4"/>
+<line y1="-2" x2="119" y2="-2" transform="matrix(-4.37114e-08 1 1 4.37114e-08 69 117)" stroke="#DBDBDC" stroke-width="4" stroke-dasharray="8 4"/>
+<line y1="-2" x2="55" y2="-2" transform="matrix(-6.99382e-08 1 1 2.73196e-08 19 0)" stroke="#DBDBDC" stroke-width="4" stroke-dasharray="8 4"/>
+<line y1="-2" x2="55" y2="-2" transform="matrix(-6.99382e-08 1 1 2.73196e-08 69 0)" stroke="#DBDBDC" stroke-width="4"/>
+<line y1="-2" x2="82.6599" y2="-2" transform="matrix(-0.617775 -0.786355 -0.786355 0.617775 66 120)" stroke="#DBDBDC" stroke-width="4" stroke-dasharray="8 4"/>
+<line y1="-2" x2="82.6196" y2="-2" transform="matrix(-0.617287 0.786738 0.786738 0.617287 69 55)" stroke="#DBDBDC" stroke-width="4"/>
+<circle r="40" transform="matrix(4.37114e-08 1 1 -4.37114e-08 42 86)" stroke="#18181A" stroke-width="4"/>
+</svg>
