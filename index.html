@@ -1,586 +1,461 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>ARUS</title>
-	<link href="css/jquery.formstyler.css" rel="stylesheet" />
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-	<link rel="manifest" href="img/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<meta name="viewport" content="width=device-width, initial-scale=1"></head>
+    <meta charset="UTF-8">
+    <title>ARUS</title>
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
 <body>
-	<div class="mobile-menu only-mobile">
-
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">
-
-				<div class="logo">
-					<img src="img/logo.svg"></div>
-
-			</a>
-			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="button-nav mobile-show activer">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav ml-auto">
-
-					<li class="nav-item">
-						<a id="s2" class="nav-link" href="#s2">How it works?</a>
-					</li>
-					<li class="nav-item">
-						<a id="s3" class="nav-link" href="#s3">App</a>
-					</li>
-					<li class="nav-item">
-						<a id="s4" class="nav-link" href="#s4">Map</a>
-					</li>
-					<li class="nav-item">
-						<a id="s5" class="nav-link" href="#s5">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a id="s6" class="nav-link" href="#s6">Contacts</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-	</div>
-
-	<header>
-		<div class="container">
-			<div class="logo">
-				<a data-menuanchor="firstPage" href="#s1">
-					<img src="img/logo.svg"></a>
-			</div>
-			<div class="info-header">
-				<nav class="navigation" id="menu">
-					<a data-menuanchor="s2" id="sm2" class="navigation__link" href="#s2">How it works?</a>
-					<a data-menuanchor="s3" id="sm3" class="navigation__link" href="#s3">App</a>
-					<a data-menuanchor="s4" id="sm4" class="navigation__link" href="#s4">Map</a>
-					<a data-menuanchor="s5" id="sm5" class="navigation__link" href="#s5">About Us</a>
-					<a data-menuanchor="s6" id="sm6" class="navigation__link " href="#s6">Contacts</a>
-				</nav>
-
-			</div>
-		</div>
-	</header>
-
-	<div id="fullpage">
-		<div class="section " id="section0">
-
-			<section class="section0">
-				<div class="container">
-					<div class="arus-gray"></div>
-					<div class="left-container">
-						<div class="arus-logo"></div>
-						<h1>Exchange</h1>
-						<a href="#">
-							<button class="btn-green">Download App</button>
-						</a>
-					</div>
-
-					<div class="right-container">
-						<div class="arus-mobile-img">
-
-							<div class="s-items">
-
-								<div>
-
-									<img class="img-t" src="img/slide.jpg"></div>
-								<div>
-
-									<div>
-
-										<img class="img-t" src="img/slide.jpg"></div>
-									<div></div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div>
-
-		<div class="section" id="section1">
-			<div class="container st-mob">
-			
-			
-			
-			
-				<div class="only-mobile">
-	<h2>How it works?</h2>
-	<div class="steps-area">
-		<span class="sp1 active">Step1</span>
-		<span class="sp2">Step2</span>
-		<span class="sp3">Step3</span>
-	</div>
-	<div class="steps">
-		<div class="step1 active">
-			<div class="step-info">
-				<p>
-					Exchange
-					<span class="b1">EUR</span>
-					to
-					<span class="b2">EEUR</span>
-				</p>
-			</div>
-
-			<div class="mob-sheme1">
-				<div class="n2 name-and-image-left">
-					John
-					<img src="img/m1.svg"></div>
-				<div class="n3 name-center">
-					Exchange
-					<br>office</div>
-
-				<div class="lines-f">
-					<div class="dottm1">
-						<div class="dts pulselr">
-							<div class="dott-bg"></div>
-						</div>
-					</div>
-					<div class="dottm2">
-						<div class="dts pulselr">
-							<div class="dott-bg"></div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="step2">
-			<div class="step-info">
-
-				<p>
-					Sending and receiving EEUR
-					<br>
-					Buying for EEUR
-					<br>Payments in EEUR</p>
-			</div>
-
-			<div class="mob-sheme2">
-					<div class="n1 name-and-image-left">
-								John
-								<img src="img/m1.svg"></div>
-				<div class="n4 name-and-image-right">
-					<img src="img/m2.svg">Mary</div>
-				<div class="n5 name-black-bg">Buy goods</div>
-				<div class="n6 name-black-bg">Pay services</div>
-
-				<div class="lines-f">
-					<div class="dottm3">
-						<div class="dts pulselr">
-							<div class="dott-bg"></div>
-						</div>
-					</div>
-					<div class="dottm3s">
-						<div class="dts pulselr">
-							<div class="dott-bg"></div>
-						</div>
-					</div>
-					
-					
-				
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="step3">
-			<div class="step-info">
-
-				<p>
-					Exchange
-					<span class="b2">EEUR</span>
-					to
-					<span class="b1">EUR</span>
-				</p>
-			</div>
-
-			<div class="mob-sheme3">
-				<div class="n4 name-and-image-right">
-					<div class="n7 name-center">
-						Exchange
-						<br>office</div>
-					<div class="n8 name-and-image-right">
-						<img src="img/m2.svg">Mary</div>
-
-					<div class="lines-f">
-						<div class="dottm4">
-							<div class="dts pulselr">
-								<div class="dott-bg"></div>
-							</div>
-						</div>
-						<div class="dottm5">
-							<div class="dts pulselr">
-								<div class="dott-bg"></div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-		<div class="arus-platform">ARUS platform</div>
-	</div>
-</div>
-			
-			
-			
-				<div class="desctop-sheme">
-					<div class="left-side">
-						<div class="step-info">
-							<div class="step-title">Step 1</div>
-							<p>
-								Exchange
-								<span class="b1">EUR</span>
-								to
-								<span class="b2">EEUR</span>
-							</p>
-						</div>
-
-						<div class="step-info">
-							<div class="step-title">Step 2</div>
-							<p>
-								Sending and receiving EEUR
-								<br>
-								Buying for EEUR
-								<br>Payments in EEUR</p>
-						</div>
-
-						<div class="step-info">
-							<div class="step-title">Step 3</div>
-							<p>
-								Exchange
-								<span class="b2">EEUR</span>
-								to
-								<span class="b1">EUR</span>
-							</p>
-						</div>
-					</div>
-
-					<div class="right-side">
-						<div class="sheme-in">
-
-							<div class="lines-f">
-								<div class="dott1">
-									<div class="dts pulselr">
-										<div class="dott-bg"></div>
-									</div>
-								</div>
-								<div class="dott2">
-									<div class="dts pulselr">
-										<div class="dott-bg"></div>
-									</div>
-								</div>
-
-								<div class="dott3">
-									<div class="dts pulselr">
-										<div class="dott-bg"></div>
-									</div>
-								</div>
-
-								<div class="dott4">
-									<div class="dts pulselr">
-										<div class="dott-bg"></div>
-									</div>
-								</div>
-								
-								<div class="dott5">
-									<div class="dts pulselr">
-										<div class="dott-bg"></div>
-									</div>
-								</div>
-								
-								<div class="dott6">
-									<div class="dts pulselr">
-										<div class="dott-bg"></div>
-									</div>
-								</div>
-								<div class="dott7">
-									<div class="dts pulselr">
-										<div class="dott-bg"></div>
-									</div>
-								</div>
-								<div class="dott8">
-									<div class="dts pulselr">
-										<div class="dott-bg"></div>
-									</div>
-								</div>
-								<div class="dott9">
-									<div class="dts pulselr">
-										<div class="dott-bg"></div>
-									</div>
-								</div>
-							</div>
-
-							<div class="n1 name-and-image-left">
-								John
-								<img src="img/m1.svg"></div>
-							<div class="n2 name-and-image-left">
-								John
-								<img src="img/m1.svg"></div>
-							<div class="n3 name-center">
-								Exchange
-								<br>office</div>
-							<div class="n4 name-and-image-right">
-								<img src="img/m2.svg">Mary</div>
-							<div class="n5 name-black-bg">Buy goods</div>
-							<div class="n6 name-black-bg">Pay services</div>
-							<div class="n7 name-center">
-								Exchange
-								<br>office</div>
-							<div class="n8 name-and-image-right">
-								<img src="img/m2.svg">Mary</div>
-						</div>
-						<div class="sheme-container">
-							<div class="sheme-title">ARUS platform</div>
-
-						</div>
-					</div>
-
-					<div class="grey-bg"></div>
-					<div class="grey2-bg"></div>
-				</div>
-			</div>
-		</div>
-		<div class="section" id="section2">
-			<div class="container">
-				<div class="fll">
-
-					<div class="right-container">
-						<div class="arus-mobile-img">
-
-							<div class="s-items">
-
-								<div>
-
-									<img class="img-t" src="img/slide.jpg"></div>
-								<div>
-
-									<div>
-
-										<img class="img-t" src="img/slide.jpg"></div>
-									<div></div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="flr">
-					<div class="only-mobile">
-						<h2>App</h2>
-					</div>
-
-					<div class="txt-info">
-						<p>
-							Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-						</p>
-						<p>
-							Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
-						</p>
-						<p>
-							Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
-						</p>
-						<a href="#">
-							<button class="btn-green">Download App</button>
-						</a>
-
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section" id="section3">
-
-			<section class="section2">
-				<div class="container">
-					<div class="map-container">
-						<a href="http://arus.exchange" target="_blank">
-							<button class="bt-map">Join Us</button>
-						</a>
-						<div id="map"></div>
-					</div>
-				</div>
-			</section>
-
-		</div>
-		<div class="section" id="section4">
-			<div class="container">
-				<div class="only-mobile">
-					<h2>About Us</h2>
-				</div>
-				<div class="fll">
-					<div class="about-bl">
-						<div class="li-info">
-							Representing Interests of currency exchanges (CE) offices
-							<br></div>
-						<div class="li-info">
-							Creating and implementing opportunities for CE partners
-							<br></div>
-						<div class="li-info">
-							Connecting CE partners to global financial sector
-							<br></div>
-						<div class="li-info">
-							Connecting CE partners to  key players on the market
-							<br></div>
-						<div class="li-info">
-							Connecting CE partners to modern business opportunities
-							<br></div>
-						<div class="li-info">
-							Introducing best use cases of modern technology to CE partners
-							<br></div>
-						<div class="li-info">
-							Providing experienced legal support through local partners
-							<br></div>
-					</div>
-				</div>
-				<div class="flr">
-					<div class="big-logo">
-						<img src="img/big-logo.svg"></div>
-				</div>
-			</div>
-
-		</div>
-		<div class="section" id="section5">
-
-			<div class="container">
-
-				<div class="only-mobile">
-					<h2>Contacts</h2>
-				</div>
-
-				<div class="arus-gray"></div>
-				<div class="left-container mob-l">
-
-					<div class="form-area">
-						<form>
-
-							<div class="form-section">
-								<input type="text" placeholder="Your Name"></div>
-
-							<div class="form-section">
-								<input type="text" placeholder="Your e-mail"></div>
-
-							<div class="form-section">
-								<button class="btn-green">SUBSCRIBE</button>
-								<span>
-									By clicking the button you agree with the
-									<a href="#">Privacy Policy</a>
-								</span>
-							</div>
-						</form>
-
-					</div>
-
-				</div>
-
-				<div class="right-container mob-r">
-					<div class="arus-mobile-img">
-
-						<div class="contacts">
-							<p> <b>Company address:</b>
-								Schützenstrasse 18
-8808 Pfäffikon, Schwyz
-	Switzerland
-							</p>
-							<p> <b>Phone number:</b>
-								+41(79)695-51-28
-							</p>
-						</div>
-
-						<span class="copy">© 2018, ARUS AG. All rights reserved</span>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script src="js/jquery.js"></script>
-
-	<script src="https://cdn.rawgit.com/hmongouachon/mgGlitch/master/src/mgGlitch.min.js"></script>
-	<script src="js/jquery.formstyler.js"></script>
-	<script src="http://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/wow.js"></script>
-
-	<script  src="js/slick.js"></script>
-	<script src="js/fullpage.min.js"></script>
-	<script  src="js/index.js"></script>
-
-	<script type="text/javascript">
-		if($(window).width() > 897) {
-
-		
-   $('#fullpage').fullpage({
-    	 anchors: ['s1', 's2', 's3', 's4', 's5',  's6'],
-        menu: '#menu',
-        lazyLoad: true,
-    });
-
-
-
-} else { 
-    // change functionality for larger screens
-}
-
-
-
-
-</script>
-
-	<script>
-	
-$(document).ready(function() {
-      $('.s-items').slick({
-	  	dots: true,
-	  	        infinite: true,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 2400,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: false,
-});
- });
-</script>
-
-	<div class="arrow-top"></div>
-
-	<style></style>
-
+    <div class="mobile-menu only-mobile">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <img src="img/logo.svg"></div>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="button-nav mobile-show activer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="s2" class="nav-link" href="#s2">How it works?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="s3" class="nav-link" href="#s3">App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="s4" class="nav-link" href="#s4">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="s5" class="nav-link" href="#s5">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="s6" class="nav-link" href="#s6">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a data-menuanchor="firstPage" href="#s1">
+                    <img src="img/logo.svg"></a>
+            </div>
+            <div class="info-header">
+                <nav class="navigation" id="menu">
+                    <a data-menuanchor="s2" id="sm2" class="navigation__link" href="#s2">How it works?</a>
+                    <a data-menuanchor="s3" id="sm3" class="navigation__link" href="#s3">App</a>
+                    <a data-menuanchor="s4" id="sm4" class="navigation__link" href="#s4">Map</a>
+                    <a data-menuanchor="s5" id="sm5" class="navigation__link" href="#s5">About Us</a>
+                    <a data-menuanchor="s6" id="sm6" class="navigation__link " href="#s6">Contacts</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <section class="section0">
+                <div class="container">
+                    <div class="arus-gray"></div>
+                    <div class="left-container">
+                        <div class="arus-logo"></div>
+                        <h1>Exchange</h1>
+                        <a href="#">
+                            <button class="btn-green">Download App</button>
+                        </a>
+                    </div>
+                    <div class="right-container">
+                        <div class="arus-mobile-img">
+                            <div class="s-items">
+                                <div>
+                                    <img class="img-t" src="img/slide.jpg"></div>
+                                <div>
+                                    <div>
+                                        <img class="img-t" src="img/slide.jpg"></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section" id="section1">
+            <div class="container st-mob">
+                <div class="only-mobile">
+                    <h2>How it works?</h2>
+                    <div class="steps-area">
+                        <span class="sp1 active">Step1</span>
+                        <span class="sp2">Step2</span>
+                        <span class="sp3">Step3</span>
+                    </div>
+                    <div class="steps">
+                        <div class="step1 active">
+                            <div class="step-info">
+                                <p>
+                                    Exchange
+                                    <span class="b1">EUR</span>
+                                    to
+                                    <span class="b2">EEUR</span>
+                                </p>
+                            </div>
+                            <div class="mob-sheme1">
+                                <div class="n2 name-and-image-left">
+                                    John
+                                    <img src="img/m1.svg"></div>
+                                <div class="n3 name-center">
+                                    Exchange
+                                    <br>office</div>
+                                <div class="lines-f">
+                                    <div class="dottm1">
+                                        <div class="dts pulselr">
+                                            <div class="dott-bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="dottm2">
+                                        <div class="dts pulselr">
+                                            <div class="dott-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step2">
+                            <div class="step-info">
+                                <p>
+                                    Sending and receiving EEUR
+                                    <br>
+                                    Buying for EEUR
+                                    <br>Payments in EEUR</p>
+                            </div>
+                            <div class="mob-sheme2">
+                                <div class="n1 name-and-image-left">
+                                    John
+                                    <img src="img/m1.svg"></div>
+                                <div class="n4 name-and-image-right">
+                                    <img src="img/m2.svg">Mary</div>
+                                <div class="n5 name-black-bg">Buy goods</div>
+                                <div class="n6 name-black-bg">Pay services</div>
+                                <div class="lines-f">
+                                    <div class="dottm3">
+                                        <div class="dts pulselr">
+                                            <div class="dott-bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="dottm3s">
+                                        <div class="dts pulselr">
+                                            <div class="dott-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step3">
+                            <div class="step-info">
+                                <p>
+                                    Exchange
+                                    <span class="b2">EEUR</span>
+                                    to
+                                    <span class="b1">EUR</span>
+                                </p>
+                            </div>
+                            <div class="mob-sheme3">
+                                <div class="n4 name-and-image-right">
+                                    <div class="n7 name-center">
+                                        Exchange
+                                        <br>office</div>
+                                    <div class="n8 name-and-image-right">
+                                        <img src="img/m2.svg">Mary</div>
+                                    <div class="lines-f">
+                                        <div class="dottm4">
+                                            <div class="dts pulselr">
+                                                <div class="dott-bg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="dottm5">
+                                            <div class="dts pulselr">
+                                                <div class="dott-bg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arus-platform">ARUS platform</div>
+                    </div>
+                </div>
+                <div class="desctop-sheme">
+                    <div class="left-side">
+                        <div class="step-info">
+                            <div class="step-title">Step 1</div>
+                            <p>
+                                Exchange
+                                <span class="b1">EUR</span>
+                                to
+                                <span class="b2">EEUR</span>
+                            </p>
+                        </div>
+                        <div class="step-info">
+                            <div class="step-title">Step 2</div>
+                            <p>
+                                Sending and receiving EEUR
+                                <br>
+                                Buying for EEUR
+                                <br>Payments in EEUR</p>
+                        </div>
+                        <div class="step-info">
+                            <div class="step-title">Step 3</div>
+                            <p>
+                                Exchange
+                                <span class="b2">EEUR</span>
+                                to
+                                <span class="b1">EUR</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="sheme-in">
+                            <div class="lines-f">
+                                <div class="dott1">
+                                    <div class="dts pulselr">
+                                        <div class="dott-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="dott2">
+                                    <div class="dts pulselr">
+                                        <div class="dott-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="dott3">
+                                    <div class="dts pulselr">
+                                        <div class="dott-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="dott4">
+                                    <div class="dts pulselr">
+                                        <div class="dott-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="dott5">
+                                    <div class="dts pulselr">
+                                        <div class="dott-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="dott6">
+                                    <div class="dts pulselr">
+                                        <div class="dott-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="dott7">
+                                    <div class="dts pulselr">
+                                        <div class="dott-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="dott8">
+                                    <div class="dts pulselr">
+                                        <div class="dott-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="dott9">
+                                    <div class="dts pulselr">
+                                        <div class="dott-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="n1 name-and-image-left">
+                                John
+                                <img src="img/m1.svg"></div>
+                            <div class="n2 name-and-image-left">
+                                John
+                                <img src="img/m1.svg"></div>
+                            <div class="n3 name-center">
+                                Exchange
+                                <br>office</div>
+                            <div class="n4 name-and-image-right">
+                                <img src="img/m2.svg">Mary</div>
+                            <div class="n5 name-black-bg">Buy goods</div>
+                            <div class="n6 name-black-bg">Pay services</div>
+                            <div class="n7 name-center">
+                                Exchange
+                                <br>office</div>
+                            <div class="n8 name-and-image-right">
+                                <img src="img/m2.svg">Mary</div>
+                        </div>
+                        <div class="sheme-container">
+                            <div class="sheme-title">ARUS platform</div>
+                        </div>
+                    </div>
+                    <div class="grey-bg"></div>
+                    <div class="grey2-bg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="container">
+                <div class="fll">
+                    <div class="right-container">
+                        <div class="arus-mobile-img">
+                            <div class="s-items">
+                                <div>
+                                    <img class="img-t" src="img/slide.jpg"></div>
+                                <div>
+                                    <div>
+                                        <img class="img-t" src="img/slide.jpg"></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flr">
+                    <div class="only-mobile">
+                        <h2>App</h2>
+                    </div>
+                    <div class="txt-info">
+                        <p>
+                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                        </p>
+                        <p>
+                            Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </p>
+                        <p>
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+                        </p>
+                        <a href="#">
+                            <button class="btn-green">Download App</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <section class="section2">
+                <div class="container">
+                    <div class="map-container">
+                        <a href="http://arus.exchange" target="_blank">
+                            <button class="bt-map">Join Us</button>
+                        </a>
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section" id="section4">
+            <div class="container">
+                <div class="only-mobile">
+                    <h2>About Us</h2>
+                </div>
+                <div class="fll">
+                    <div class="about-bl">
+                        <div class="li-info">
+                            Representing Interests of currency exchanges (CE) offices
+                            <br></div>
+                        <div class="li-info">
+                            Creating and implementing opportunities for CE partners
+                            <br></div>
+                        <div class="li-info">
+                            Connecting CE partners to global financial sector
+                            <br></div>
+                        <div class="li-info">
+                            Connecting CE partners to key players on the market
+                            <br></div>
+                        <div class="li-info">
+                            Connecting CE partners to modern business opportunities
+                            <br></div>
+                        <div class="li-info">
+                            Introducing best use cases of modern technology to CE partners
+                            <br></div>
+                        <div class="li-info">
+                            Providing experienced legal support through local partners
+                            <br></div>
+                    </div>
+                </div>
+                <div class="flr">
+                    <div class="big-logo">
+                        <img src="img/big-logo.svg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="container">
+                <div class="only-mobile">
+                    <h2>Contacts</h2>
+                </div>
+                <div class="arus-gray"></div>
+                <div class="left-container mob-l">
+                    <div class="form-area">
+                        <form>
+                            <div class="form-section">
+                                <input type="text" placeholder="Your Name"></div>
+                            <div class="form-section">
+                                <input type="text" placeholder="Your e-mail"></div>
+                            <div class="form-section">
+                                <button class="btn-green">SUBSCRIBE</button>
+                                <span>
+                                    By clicking the button you agree with the
+                                    <a href="#">Privacy Policy</a>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="right-container mob-r">
+                    <div class="arus-mobile-img">
+                        <div class="contacts">
+                            <p> <b>Company address:</b>
+                                Schützenstrasse 18
+                                8808 Pfäffikon, Schwyz
+                                Switzerland
+                            </p>
+                            <p> <b>Phone number:</b>
+                                +41(79)695-51-28
+                            </p>
+                        </div>
+                        <span class="copy">© 2018, ARUS AG. All rights reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.rawgit.com/hmongouachon/mgGlitch/master/src/mgGlitch.min.js"></script>
+    <script src="js/jquery.formstyler.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/index.js"></script>
+    <div class="arrow-top"></div>
 </body>
 
 </html>
